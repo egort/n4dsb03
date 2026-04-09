@@ -82,6 +82,10 @@ Use `<SLAVE_ID>` as your active module address.
 Conversion:
 - `temp_c = int16(raw) / 10.0`
 
+Fail sentinel:
+- `raw = 32768 (0x8000)` means sensor fail/loss for that channel.
+- Treat values outside `-55..125 C` as invalid DS18B20 data.
+
 Read D1/D2 via FC04:
 
 ```powershell
