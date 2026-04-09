@@ -27,6 +27,8 @@ This document shows a fast and safe way to change the RS485 address on a new N4D
 
 Use `<COM_PORT>` as the serial port of your USB-RS485 adapter (the adapter connected to the module bus).
 
+![USB-RS485 adapter port example](picture.png)
+
 ### 1) Check current address
 
 ```powershell
